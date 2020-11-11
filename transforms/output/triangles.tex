@@ -1,0 +1,42 @@
+\documentclass[14pt]{extarticle}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{ccicons}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{{\footnotesize Łukasz Łaniewski-Wołłk}~\ccbysa}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{}
+\author{Łukasz Łaniewski-Wołłk}
+
+\setlength\parindent{0pt}
+
+\newcommand{\img}[1]{\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0] at (current page.center)
+{\includegraphics[width=\paperwidth]{#1}};
+\end{tikzpicture}%
+\vspace{21.5cm}}
+
+\begin{document}
+\img{img_hip.png}
+\section*{Hyperbolic}
+You can fit {\bf seven or more} triangles is every corner.\\
+This space has {\bf negative} curvature.
+\newpage
+\img{img_ico.png}
+\section*{Spherical}
+You can fit {\bf five or less} triangles is every corner.\\
+This space has {\bf positive} curvature.
+\newpage
+\img{img_idn.png}
+\section*{Flat}
+You can fit {\bf exactly six} triangles is every corner.\\
+This space has {\bf zero} curvature.
+\end{document}

@@ -1,0 +1,32 @@
+\documentclass[14pt]{extarticle}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{ccicons}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{{\footnotesize Łukasz Łaniewski-Wołłk}~\ccbysa}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{}
+\author{Łukasz Łaniewski-Wołłk}
+
+\setlength\parindent{0pt}
+
+\newcommand{\img}[1]{\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0] at (current page.center)
+{\includegraphics[width=\paperwidth]{#1}};
+\end{tikzpicture}%
+\vspace{21cm}}
+
+\begin{document}
+\img{img_i_hip.png}
+\section*{Hyperbolic}
+This is a {\bf Poincaré disk}. It is just one representation of a hyperbolic space.
+Beautiful images of Poincaré disks and other mathematical ideas can be found in works of a Dutch artist {\bf M. C. Escher}.
+\end{document}
